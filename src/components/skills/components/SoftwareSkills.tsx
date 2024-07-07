@@ -50,7 +50,7 @@ export default function SoftwareSkills() {
     ]
   return (
     <div>
-        <ul className='flex gap-7 flex-row flex-wrap w-5/6 justify-center'>
+        <ul className='flex gap-7 flex-row flex-wrap w-full md:w-5/6 justify-center items-center'>
             {softwareSkills.map((skill) => (
                 <li key={skill.name} className='text-center flex flex-col items-center'>
                     <img src={skill.frontawesomeclassname} alt={skill.name} className='w-10'/>

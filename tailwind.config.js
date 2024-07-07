@@ -22,6 +22,16 @@ export default {
       },
       backgroundColor: {
         'primary': '#55198b',
+        'primary-dark': '#181733',
+        'primary-light': '#ffffff',
+        'sectionbg-light': '#f3f5f8', 
+      },
+      colors: {
+        'secondary-dark': '#00159b',
+        'third-dark': '#921919',
+      },
+      transitionDuration: {
+        '400': '400ms',
       },
     },
   },

@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import emoji from "react-easy-emoji";
 import SocialMedia from "./SocialMedia";
 import { Link } from "react-scroll";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { StyleContext } from "../contexts/StyleContext";
 
 export default function Greeting() {
+  const { isDark } = useContext(StyleContext);
   const greeting = {
     username: "Saad Pasta",
     title: "Hi all, I'm Manh Nguyen",
@@ -15,19 +17,19 @@ export default function Greeting() {
     displayGreeting: true, // Set false to hide this section, defaults to true
   };
   return (
-    <div className="flex flex-row p-10">
+    <div className={`flex md:flex-row items-center w-full justify-center flex-col p-10 ${isDark ? 'text-white' : ''}`}>
       <div className="flex flex-col gap-3">
-        <h1 className="flex flex-row text-5xl font-medium my-7">
+        <h1 className="flex flex-row md:text-5xl md:justify-start justify-center text-2xl font-medium md:my-7 text-center">
           {greeting.title} <span>{emoji("👋")}</span>
         </h1>
-        <p className="text-xl w-9/12 opacity-45 text-wrap leading-10 my-5">
+        <p className="text-xl md:w-9/12 w-full text-center opacity-55 text-wrap leading-10 md:my-5">
           {greeting.subTitle}
         </p>
-        <div>
+        <div className="flex justify-center md:justify-start">
           <SocialMedia />
         </div>
         <div className="flex flex-row gap-4 mt-9 items-center">
-          <button className="bg-primary text-white px-4 py-2 text-xl rounded-md">
+          <button className="bg-primary text-white px-4 py-2 text-sm md:text-xl rounded-md">
             <Link
               to="ContactMe"
               smooth={true}
@@ -40,19 +42,18 @@ export default function Greeting() {
           </button>
           {greeting.resumeLink && (
             <a
-              // href={require("../../public/Resume.pdf")}
               href="../../public/Resume.pdf"
               download="Resume.pdf"
               className="download-link-button"
             >
-              <button className="bg-primary text-white px-4 py-2 text-xl rounded-md uppercase font-medium">
+              <button className="bg-primary text-white px-4 py-2 text-sm md:text-xl rounded-md uppercase font-medium">
                 Download my resume
               </button>
             </a>
           )}
         </div>
       </div>
-      <div className="w-full">
+      <div className="w-full ">
         <DotLottieReact
           src="https://lottie.host/dc220d90-4313-4db0-93d8-180e9c16ac01/Xp5vpnFBB0.lottie"
           loop

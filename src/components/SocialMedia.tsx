@@ -18,27 +18,27 @@ export default function SocialMedia() {
         <ul className='flex flex-row gap-3'>
           <li>
             <a href={socialMediaLinks.github}>
-              <img src={githubIcon} alt="github icon" className='w-10'/>
+              <img src={githubIcon} alt="github icon" className='md:w-10 w-7' />
             </a>
           </li>
           <li>
             <a href={socialMediaLinks.linkedin}>
-              <img src={linkedinIcon} alt="linkedin icon" className='w-10'/>
+              <img src={linkedinIcon} alt="linkedin icon" className='md:w-10 w-7'/>
             </a>
           </li>
           <li>
             <a href={socialMediaLinks.gmail}>
-              <img src={emailIcon} alt="gmail icon" className='w-10'/>
+              <img src={emailIcon} alt="gmail icon" className='md:w-10 w-7'/>
             </a>
           </li>
           <li>
             <a href={socialMediaLinks.facebook}>
-              <img src={facebookIcon} alt="facebook icon" className='w-10'/>
+              <img src={facebookIcon} alt="facebook icon" className='md:w-10 w-7'/>
             </a>
           </li>
           <li>
             <a href={socialMediaLinks.leetcode}>
-              <img src={leedcodeIcon} alt="leedcode icon" className='w-10'/>
+              <img src={leedcodeIcon} alt="leedcode icon" className='md:w-10 w-7'/>
             </a>
           </li>
         </ul>

@@ -1,4 +1,3 @@
-import React from 'react';
 import pictureofme from '../../assets/images/pictureofme.jpg';
 import SocialMedia from '../SocialMedia';
 

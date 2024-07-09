@@ -1,4 +1,3 @@
-import React from 'react'
 import SoftwareSkills from './components/SoftwareSkills'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBolt } from '@fortawesome/free-solid-svg-icons';

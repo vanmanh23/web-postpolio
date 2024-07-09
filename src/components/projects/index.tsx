@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 import ReposCard from "./components/ReposCard";
 import { StyleContext } from "../../contexts/StyleContext";
 

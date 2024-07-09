@@ -1,4 +1,3 @@
-import React from 'react';
 import sofitgymproject from '../../assets/images/sofitgymproject.png';
 import ExperienceCard from './components/ExperienceCard';
 import quizlogo from '../../assets/images/quiz-logo.png';

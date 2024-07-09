@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import { useState, useContext, useEffect } from "react";
 import { StyleContext } from "../contexts/StyleContext";
 import emoji from "react-easy-emoji";
 

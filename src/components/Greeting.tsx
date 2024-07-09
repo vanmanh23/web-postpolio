@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import emoji from "react-easy-emoji";
 import SocialMedia from "./SocialMedia";
 import { Link } from "react-scroll";

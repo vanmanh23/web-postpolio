@@ -1,4 +1,3 @@
-import React from 'react';
 import htmlIcon from '../../../assets/images/html-5.png'; 
 import  cssIcon  from '../../../assets/images/css-3.png'; 
 import  javascroptIcon  from '../../../assets/images/javascript.png'; 

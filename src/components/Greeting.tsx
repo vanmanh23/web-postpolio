@@ -53,7 +53,7 @@ export default function Greeting() {
           )}
         </div>
       </div>
-      <div className="w-full ">
+      <div className="w-full">
         <DotLottieReact
           src="https://lottie.host/dc220d90-4313-4db0-93d8-180e9c16ac01/Xp5vpnFBB0.lottie"
           loop

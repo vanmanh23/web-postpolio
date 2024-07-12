@@ -42,7 +42,8 @@ export default function Greeting() {
           </button>
           {greeting.resumeLink && (
             <a
-              href="../../public/Resume.pdf"
+              // href="../../public/Resume.pdf"
+              href="https://drive.google.com/file/d/1aPG01lxbRqXJULoukNzayVqUFnl8zX_h/view?usp=drive_link"
               download="Resume.pdf"
               className="download-link-button"
             >

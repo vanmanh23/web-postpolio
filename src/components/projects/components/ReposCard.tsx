@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { StyleContext } from "../../../contexts/StyleContext";
 
 type RepositoryProps = {
     id: number;
@@ -9,8 +11,9 @@ type RepositoryProps = {
     description: string;
   }
 export default function ReposCard({ ...props }: RepositoryProps) {
+    const {isDark} = useContext(StyleContext);
   return (
-    <div className='flex flex-col w-full p-6 border-gray-600 gap-3 shadow-md'>
+    <div className={`flex flex-col w-full p-6 border-gray-600 gap-3 shadow-md ${isDark ? "bg-primary-dark" : ""}`}>
         <div className=''>
             <h2 className='text-2xl font-medium'>🔥 {props.name}</h2>
         </div>

@@ -1,0 +1,13 @@
+/* Initial state: elements are invisible and translated down */
+.opacity-0 {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  
+  /* Fade-in animation when sections come into view */
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
